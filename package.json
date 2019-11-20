@@ -1,0 +1,16 @@
+{
+  "name": "rockstarhackathon",
+  "version": "1.0.0",
+  "description": "Visual AI Rockstar Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress": "cypress open"
+  },
+  "author": "Tola Fasoyiro",
+  "license": "ISC",
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.8.20",
+    "cypress": "^3.6.1"
+  }
+}
