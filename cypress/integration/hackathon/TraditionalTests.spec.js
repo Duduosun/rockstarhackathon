@@ -41,7 +41,7 @@ describe('Functional Validation Suite using preferred traditional functional tes
             .children().should('have.length', 3)                            //bug in Version 2
         cy.get(webel.lblUsername).should('be.visible')
             .and('have.text', 'Username')
-        cy.get(webel.iconUsername).should('be.visible')                           //bug in Version 2
+        cy.get(webel.iconUsername).should('be.visible')                     //bug in Version 2
         cy.get(webel.txtUsername).should('be.visible')
             .and('be.enabled')
             .and('have.class', 'form-control')
@@ -51,7 +51,7 @@ describe('Functional Validation Suite using preferred traditional functional tes
             .children().should('have.length', 3)                            //bug in Version 2
         cy.get(webel.lblPassword).should('be.visible')
             .and('contain.text', 'Password')                                //bug in Version 2
-        cy.get(webel.iconPassword).should('be.visible')                           //bug in Version 2
+        cy.get(webel.iconPassword).should('be.visible')                     //bug in Version 2
         cy.get(webel.txtPassword).should('be.visible')
             .and('be.enabled')
             .and('have.class', 'form-control')
@@ -75,7 +75,7 @@ describe('Functional Validation Suite using preferred traditional functional tes
             .and('have.attr', 'src', 'img/social-icons/twitter.png')
         cy.get(webel.iconFacebook).should('be.visible')
             .and('have.attr', 'src', 'img/social-icons/facebook.png')
-        cy.get(webel.iconLinkedIN).should('be.visible')                           //bug in Version 2
+        cy.get(webel.iconLinkedIN).should('be.visible')                     //bug in Version 2
             .and('have.attr', 'src', 'img/social-icons/linkedin.png')       
 
     })
@@ -84,7 +84,7 @@ describe('Functional Validation Suite using preferred traditional functional tes
         cy.get(webel.txtUsername).clear()
         cy.get(webel.txtPassword).clear()
         cy.get(webel.btnLogin).click()
-        cy.get(webel.frmLogin).invoke('attr', 'role', 'alert')
+        cy.get(webel.frmLogin).invoke('attr', 'role', 'alert')                //bug in Version 2
             .should('contain.text', 'Both Username and Password must be present')
             
         cy.get(webel.txtUsername).type('Username')

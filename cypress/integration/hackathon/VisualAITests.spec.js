@@ -12,7 +12,7 @@ describe('Functional Validation Suite using visual AI testing with Applitools', 
     const webel = new ElementsPage()
 
     this.beforeEach('Background', ()=>{
-        cy.visit(versionTwo)
+        cy.visit(versionOne)
         cy.title().should('include', data.hackathonHomePageTitle)
         cy.eyesOpen({appName: 'Visual AI Rockstar Hackathon', batchName: 'VisualAITests'})
     })
